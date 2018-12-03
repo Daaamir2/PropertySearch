@@ -1,0 +1,9 @@
+language: java
+jdk: oraclejdk11
+script: mvn -e verify
+notifications:
+  email:
+    recipients:
+      - alekbaevd@ya.ru
+    on_failure: always
+    on_success: change
