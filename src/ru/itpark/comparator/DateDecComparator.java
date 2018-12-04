@@ -2,13 +2,14 @@ package ru.itpark.comparator;
 
 import ru.itpark.domain.House;
 
+import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Comparator;
 import java.util.GregorianCalendar;
 
-public class DateDecComparator implements Comparator<House> {
+public class DateDecComparator implements  Comparator<House>, Serializable {
     @Override
     public int compare(House o1, House o2) {
         SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
