@@ -25,7 +25,7 @@ public class DateDecComparator implements  Comparator<House>, Serializable {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        long result = dateO1.getTimeInMillis() - dateO2.getTimeInMillis();
+        long result = -(dateO1.getTimeInMillis() - dateO2.getTimeInMillis());
         if (result > 0) {
             return 1;
         } else if (result == 0) {
