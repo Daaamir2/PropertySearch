@@ -3,7 +3,6 @@ package ru.itpark.service;
 import ru.itpark.domain.House;
 import ru.itpark.repository.HouseRepository;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -65,7 +64,6 @@ public class HouseService {
 
     public List<House> findWithPhoto() {
         List<House> result = new ArrayList<>();
-        List<String> findByPhotoList = Arrays.asList();
         for (House house : repository.getAll()) {
             if (house.isPhoto()) {
                 result.add(house);
@@ -76,7 +74,6 @@ public class HouseService {
 
     public List<House> findWithoutPhoto() {
         List<House> result = new ArrayList<>();
-        List<String> findByPhotoList = Arrays.asList();
         for (House house : repository.getAll()) {
             if (!house.isPhoto()) {
                 result.add(house);

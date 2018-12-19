@@ -8,7 +8,7 @@ import ru.itpark.comparator.PriceIncComparator;
 import ru.itpark.domain.House;
 import ru.itpark.repository.HouseRepository;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;

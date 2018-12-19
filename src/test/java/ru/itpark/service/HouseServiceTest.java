@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import ru.itpark.domain.House;
 import ru.itpark.repository.HouseRepository;
 
+
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
