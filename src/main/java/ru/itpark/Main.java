@@ -26,12 +26,12 @@ public class Main {
         System.out.println(service.getSorted(new PriceIncComparator()));
         System.out.println(service.getSorted(new DateDecComparator()));
 
-        System.out.println(service.findByNeighborhood("Бабушкинский").getAll());
-        System.out.println(service.findByMetro("Арбатская").getAll());
-        System.out.println(service.findByPhoto().getAll());
-
-        System.out.println((service.findByCity("Казань")).getSorted(new PriceIncComparator()));
-
-        System.out.println(service.findByTypeOfProperty("Квартира").findPriceRange(5_000_000,10_000_000).getSorted(new PriceIncComparator()));
+//        System.out.println(service.findByNeighborhood("Бабушкинский").getAll());
+//        System.out.println(service.findByMetro("Арбатская").getAll());
+//        System.out.println(service.findByPhoto().getAll());
+//
+//        System.out.println((service.findByCity("Казань")).getSorted(new PriceIncComparator()));
+//
+//        System.out.println(service.findByTypeOfProperty("Квартира").findPriceRange(5_000_000,10_000_000).getSorted(new PriceIncComparator()));
     }
 }
