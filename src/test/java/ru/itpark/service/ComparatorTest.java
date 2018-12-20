@@ -28,7 +28,7 @@ class ComparatorTest {
     }
 
     @Test
-    void PriceDecComparatorTest() {
+    void priceDecComparatorTest() {
         List<House> list = service.getSorted(new PriceDecComparator());
         int[] result = new int[list.size()];
         int i = 0;
@@ -41,7 +41,7 @@ class ComparatorTest {
     }
 
     @Test
-    void PriceIncComparatorTest() {
+    void priceIncComparatorTest() {
         List<House> list = service.getSorted(new PriceIncComparator());
         int[] result = new int[list.size()];
         int i = 0;
@@ -54,7 +54,7 @@ class ComparatorTest {
     }
 
     @Test
-    void DateDecComparatorTest() {
+    void dateDecComparatorTest() {
         List<House> list = service.getSorted(new DateDecComparator());
         String[] result = new String[list.size()];
         int i = 0;
