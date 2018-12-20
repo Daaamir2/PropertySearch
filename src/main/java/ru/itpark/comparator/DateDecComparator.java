@@ -17,10 +17,6 @@ public class DateDecComparator implements  Comparator<House>, Serializable {
         Calendar dateO2 = new GregorianCalendar();
         try {
             dateO1.setTime(format.parse(o1.getDate()));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        try {
             dateO2.setTime(format.parse(o2.getDate()));
         } catch (ParseException e) {
             e.printStackTrace();
